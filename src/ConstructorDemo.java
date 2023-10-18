@@ -21,6 +21,15 @@ class Calc2 {
 		num1 = (int) b;
 		num2 = c;
 	}
+	
+	public Calc2(int num1, int num2, int num3) {
+		System.out.println("this keyword significance");
+		this.num1 = num1; // this --> current object(instance)
+		this.num2 = num2;
+		
+		System.out.println(this.num1);
+		System.out.println(this.num2);
+	}
 }
 
 public class ConstructorDemo {
@@ -40,5 +49,9 @@ public class ConstructorDemo {
 		
 		System.out.println(obj3.num1);
 		System.out.println(obj3.num2);
+		
+		Calc2 obj4 = new Calc2(7, 8, 9);
+		System.out.println(obj4.num1);
+		System.out.println(obj4.num2);
 	}
 }
