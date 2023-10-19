@@ -1,4 +1,11 @@
 
+/*
+ * Inner class
+ * 	Member class(without static keyword)
+ * 	Static class
+ * 	Anonymous class
+ */
+
 class Outer {	// Outer.class
 	int a;
 	public void show() {
@@ -26,7 +33,7 @@ public class InnerClassDemo {	// InnerClassDemo.class
 		Outer.Inner obj2 = obj.new Inner();
 		obj2.display();
 		
-		Outer.AnotherInner obj3 = new Outer.AnotherInner();
+		Outer.AnotherInner obj3 = new Outer.AnotherInner();	// for a static inner class
 		obj3.anotherDisplay();
 	}
 }
