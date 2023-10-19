@@ -13,7 +13,7 @@ class N extends M {
 }
 
 class O extends M {
-	public void show() {
+	public void show() {	// Method Overriding
 		System.out.println("in O");
 	}
 }
