@@ -1,7 +1,7 @@
 
 class StudentCap {
-	int rollno;
-	String name;
+	private int rollno;
+	private String name;
 	
 	// Getters and Setters;
 	
@@ -21,5 +21,7 @@ public class EncapsulationDemo {
 		
 		s0.setRollno(100);
 		System.out.println(s0.getRollno());		
+		
+		
 	}
 }
