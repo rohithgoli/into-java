@@ -1,6 +1,6 @@
 import java.util.Objects;
 
-public class Subject {
+public class Subject implements Comparable<Subject> {
 	String name;
 	int subjectCode;
 	
@@ -32,5 +32,10 @@ public class Subject {
 			return false;
 		Subject other = (Subject) obj;
 		return subjectCode == other.subjectCode;
+	}
+
+	@Override
+	public int compareTo(Subject that) {
+		return this.subjectCode - that.subjectCode;
 	}
 }
