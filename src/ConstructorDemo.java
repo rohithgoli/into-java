@@ -36,7 +36,11 @@ public class ConstructorDemo {
 	public static void main(String args[]) {
 		
 		Calc2 obj1 = new Calc2();
+		// Hey, java compiler provides above as default constructor ONLY
+		// IF we don't have any constructor in a class
 		
+		// CAUTION: If only parameterized constructor is defined in the class
+		// NO DEFAULT CONSTRUCTOR is invoked by the constructor implicitly
 		System.out.println(obj1.num1);
 		System.out.println(obj1.num2);
 		
@@ -44,6 +48,12 @@ public class ConstructorDemo {
 		
 		System.out.println(obj2.num1);
 		System.out.println(obj2.num2);
+		
+		// calling with byte instead of int
+		Calc2 obj2WithByte = new Calc2((byte)18);
+		System.out.println(obj2WithByte.num1);
+		System.out.println(obj2WithByte.num2);
+		// Whoo ! it does not gave any error, byte got converted to int 
 		
 		Calc2 obj3 = new Calc2(5.9, 2);
 		

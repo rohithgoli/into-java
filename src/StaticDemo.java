@@ -21,6 +21,8 @@ class Emp {
 }
 
 public class StaticDemo {
+	static {
+		System.out.println("Static block of class StaticDemo is invoked");	}
 	public static void main(String args[]) {
 		Emp ramu = new Emp();
 //		ramu.eid = 3;
