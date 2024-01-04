@@ -1,6 +1,6 @@
 
 public class OperatorsDemo {
-	public static void main(String args[]) {
+	public static void main(String[] args) {
 		
 		// Arthimetic operators
 		int num1=5, num2=2;
