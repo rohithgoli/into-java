@@ -37,7 +37,7 @@ class Task2 implements Runnable {
 
 
 public class ThreadBasicsRunner {
-	public static void main(String[] args) {
+	public static void main(String[] args) throws InterruptedException {
 		
 		// New
 		// RUNNABLE
@@ -59,9 +59,15 @@ public class ThreadBasicsRunner {
 		Thread thread = new Thread(task2);
 		thread.start();
 		
+		//wait for task1 to complete
+		task1.join();
+		thread.join();
 		
 		System.out.println("\n Task3 launched");
+		
+		
 		// task3
+		System.out.println("\n Main method started");
 		for(int k = 301; k <= 399; k++) {
 			System.out.print(k + " ");
 		}
