@@ -38,9 +38,19 @@ class Task2 implements Runnable {
 
 public class ThreadBasicsRunner {
 	public static void main(String[] args) {
+		
+		// New
+		// RUNNABLE
+		// RUNNING
+		// BLOCKED / WAITING
+		// TERMINATED / DEAD
+		
 		// task1
 		System.out.println("\n Task1 launched");
 		Task1 task1 = new Task1();
+		
+		task1.setPriority(1);
+		
 		task1.start();
 		
 		System.out.println("\n Task2 launched");
