@@ -62,5 +62,9 @@ public class FunctionalInterfaceRunner {
 		.map(new MapNumberSquareFunction())
 		.forEach(new PrintNumberConsumer());
 		
+		//1. Storing functions in variables
+		//2. Passing functions to methods
+		//3. Returning functions from methods
+		
 	}
 }

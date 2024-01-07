@@ -66,7 +66,7 @@ public class FunctionalProgrammingRunner {		// Functions as First Class Citizens
 	}
 	
 	public static void main(String[] args) {
-		
+	
 		List<String> list = List.of("Apple", "Banana", "Beet root", "Carrot", "Drum Stick");
 		printBasic(list);
 		printWithFunctionalProgramming(list);
