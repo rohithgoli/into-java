@@ -47,7 +47,7 @@ public class ThreadBasicsRunner {
 		
 		// task1
 		System.out.println("\n Task1 launched");
-		Task1 task1 = new Task1();
+		Task1 task1 = new Task1(); 
 		
 		task1.setPriority(1);
 		
