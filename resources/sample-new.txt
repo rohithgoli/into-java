@@ -1,0 +1,12 @@
+Python
+Java 21
+Java 21script
+Typescript
+DataStructures
+Algorithms
+Version Control
+Docker
+React
+AWS
+GCP
+Azure
